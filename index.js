@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 })) // for parsing application/x-www-form-urlencoded
 
-app.post('/callback', (req, res) => {
+app.post('/time-scheduler/callback', (req, res) => {
   const options = {
     method: 'POST',
     uri: 'https://api.line.me/v2/bot/message/reply',
